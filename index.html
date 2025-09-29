@@ -186,28 +186,5 @@
         </div>
     </footer>
 
-    <script>
-        const audio = new Audio('assets/sons/som_pagina.mp3');
-
-        document.addEventListener('DOMContentLoaded', () => {
-            audio.play().catch(error => {
-                console.error("Audio playback failed:", error);
-            });
-        });
-
-        const navLinks = document.querySelectorAll('.main-nav a');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const href = this.href;
-                audio.play();
-                audio.onended = () => {
-                    window.location.href = href;
-                };
-            });
-        });
-    </script>
-
 </body>
 </html>

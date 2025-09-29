@@ -15,7 +15,6 @@ Este é o site da AquaTech, uma marca de garrafas inteligentes que combinam desi
 
 *   HTML5
 *   CSS3
-*   JavaScript
 
 ## 🏃‍♀️ Como Executar
 
