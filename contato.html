@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - AquaTech</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="assets/img/logo.png" alt="AquaTech Logo">
+                AquaTech &copy;
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Modelos</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <section class="contact-section">
+                    <h2>Envie uma Mensagem</h2>
+                    <p>Preencha o formulário abaixo e entraremos em contato.</p>
+                    <form class="contact-form">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </section>
+            </div>
+            <div class="contact-details-section">
+                <section class="contact-section">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem alguma dúvida sobre nossos produtos ou quer se tornar um revendedor? Entre em contato conosco.</p>
+                    
+                    <div class="contact-info">
+                        <h3>Nosso Endereço</h3>
+                        <p>Avenida da Inovação, 456</p>
+                        <p>Distrito Industrial, Cidade Tech - TC</p>
+                        <p>CEP: 98765-432</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Horário de Atendimento</h3>
+                        <p><strong>Segunda a Sexta:</strong> 9h às 18h</p>
+                        <p><strong>E-mail:</strong> contato@aquatech.com</p>
+                    </div>
+                </section>
+
+                <section class="map-section">
+                    <h2>Nosso Escritório Central</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086399940433!2d-122.4194154846813!3d37.77492957975899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1e8f23b7%3A0x4a501367f076adff!2sSan%20Francisco%20City%20Hall!5e0!3m2!1spt-BR!2sbr!4v1678886400000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 AquaTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const audio = new Audio('assets/sons/som_pagina.mp3');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            audio.play().catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        });
+
+        const navLinks = document.querySelectorAll('.main-nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                audio.play();
+                audio.onended = () => {
+                    window.location.href = href;
+                };
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Modelos - AquaTech</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="assets/img/logo.png" alt="AquaTech Logo">
+                AquaTech &copy;
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html" class="active">Modelos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>Nossa Tecnologia</h2>
+            <p>A AquaTech nasceu da paixão por design e inovação. Nossas garrafas não são apenas recipientes, são assistentes de hidratação. Usamos tecnologia de isolamento a vácuo com parede dupla de aço inoxidável para garantir que sua bebida permaneça na temperatura ideal por horas a fio, seja quente ou fria.</p>
+        </section>
+
+        <section class="services-section">
+            <h2>Recursos Principais</h2>
+            <p>Todas as nossas garrafas são construídas com materiais de alta qualidade, livres de BPA e com um design à prova de vazamentos.</p>
+            <ul>
+                <li><strong>Isolamento Superior:</strong> Mantém bebidas frias por até 24 horas e quentes por até 12 horas.</li>
+                <li><strong>Aço Inoxidável 18/8:</strong> Material de grau alimentício que não retém sabor ou odor.</li>
+                <li><strong>Design Ergonômico:</strong> Leves, resistentes e fáceis de transportar para qualquer aventura.</li>
+                <li><strong>Tampa Inteligente (Modelos Pro e Ultra):</strong> Display de LED com indicador de temperatura.</li>
+            </ul>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Nossos Modelos</h2>
+            <p>Encontre a AquaTech perfeita para o seu dia a dia.</p>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Capacidade e Recursos</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AquaTech Go</td>
+                        <td>500ml, tampa simples, ideal para o dia a dia.</td>
+                        <td>R$ 129,90</td>
+                    </tr>
+                    <tr>
+                        <td>AquaTech Pro</td>
+                        <td>750ml, tampa com display de temperatura.</td>
+                        <td>R$ 189,90</td>
+                    </tr>
+                    <tr>
+                        <td>AquaTech Ultra</td>
+                        <td>1L, tampa com display e lembrete de hidratação.</td>
+                        <td>R$ 249,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 AquaTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const audio = new Audio('assets/sons/som_pagina.mp3');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            audio.play().catch(error => {
+                console.error("Audio playback failed:", error);
+            });
+        });
+
+        const navLinks = document.querySelectorAll('.main-nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                audio.play();
+                audio.onended = () => {
+                    window.location.href = href;
+                };
+            });
+        });
+    </script>
+
+</body>
+</html>
