@@ -351,21 +351,6 @@ body.dark-theme {
     z-index: 2;
 }
 
-@media (max-width: 768px) {
-    .main-header .container {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-}
-
 /* Estilos da Seção de Parceiros */
 .partners-section {
     padding: 4rem 0;
@@ -566,4 +551,59 @@ body.dark-theme {
 
 .greenpeace-logo {
     max-height: 160px; /* Double the size of the other logos */
+}
+
+@media (max-width: 992px) {
+    .about-company-content {
+        grid-template-columns: 1fr;
+    }
+
+    .epic-text-section p {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .epic-text-section p {
+        font-size: 1.2rem;
+    }
+
+    .partner-logo {
+        max-height: 60px;
+    }
+
+    .model-card {
+        width: 100%;
+    }
 }
