@@ -2,6 +2,18 @@
 
 Este é o site da AquaTech, uma marca de garrafas inteligentes que combinam design e tecnologia para revolucionar a sua hidratação.
 
+
+## ✨ Features
+
+*   **Design Moderno e Atraente:** Uma interface elegante e moderna, com um tema escuro e efeitos de LED.
+*   **Vídeo de Fundo:** Um vídeo de fundo imersivo na seção principal.
+*   **Animações:** Animações sutis que são ativadas ao rolar a página.
+*   **Carrossel de Parceiros:** Um carrossel infinito com os logotipos dos parceiros.
+*   **Seção de Modelos:** Uma seção para apresentar os modelos de garrafas com um efeito de hover para mostrar mais informações.
+*   **Páginas de Coleções:** Páginas dedicadas para cada coleção de garrafas, com um design único e imersivo.
+*   **Página de Contato:** Uma página de contato completa, com formulário, informações de contato e mapa interativo.
+*   **Responsivo:** O site é responsivo e se adapta a diferentes tamanhos de tela.
+
 ## 👨‍💻 Autores e Papéis
 
 O projeto foi desenvolvido por um trio de alunos, cada um com foco em áreas específicas:
@@ -24,16 +36,6 @@ O design do AquaTech utiliza um tema escuro (Dark Mode) com destaques em cores v
 
 * Justificativa: A fonte Oxanium foi utilizada em títulos e elementos de destaque para injetar um toque de futurismo e alta tecnologia no design. Seu estilo não convencional de cursiva fortalece a identidade visual inovadora da marca, contrastando com a sobriedade da Roboto.
 
-## ✨ Features
-
-*   **Design Moderno e Atraente:** Uma interface elegante e moderna, com um tema escuro e efeitos de LED.
-*   **Vídeo de Fundo:** Um vídeo de fundo imersivo na seção principal.
-*   **Animações:** Animações sutis que são ativadas ao rolar a página.
-*   **Carrossel de Parceiros:** Um carrossel infinito com os logotipos dos parceiros.
-*   **Seção de Modelos:** Uma seção para apresentar os modelos de garrafas com um efeito de hover para mostrar mais informações.
-*   **Páginas de Coleções:** Páginas dedicadas para cada coleção de garrafas, com um design único e imersivo.
-*   **Página de Contato:** Uma página de contato completa, com formulário, informações de contato e mapa interativo.
-*   **Responsivo:** O site é responsivo e se adapta a diferentes tamanhos de tela.
 
 ## 📂 Estrutura do Projeto
 
