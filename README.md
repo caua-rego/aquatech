@@ -16,7 +16,6 @@ O projeto foi desenvolvido por um trio de alunos, cada um com foco em áreas esp
 
 O design do AquaTech utiliza um tema escuro (Dark Mode) com destaques em cores vibrantes para simular o efeito "LED".
 
-Tipografia
 **Fonte Principal (Corpo de Texto)**: Roboto (Sans-serif)
 
 * Justificativa: A fonte Roboto foi escolhida por sua legibilidade impecável e seu design moderno. Ela alinha-se à estética tecnológica e limpa da marca AquaTech, garantindo uma leitura clara e contemporânea em todos os dispositivos.
