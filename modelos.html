@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos - AquaTech Marketplace</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="assets/img/logo.png" alt="AquaTech Logo">
+                AquaTech &copy;
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelos.html" class="active">Modelos</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="marketplace-container">
+        <aside class="filter-sidebar">
+            <h3>Filtros</h3>
+            <div class="filter-group">
+                <label for="search-bar">Pesquisar</label>
+                <input type="text" id="search-bar" placeholder="Nome do modelo...">
+            </div>
+            <div class="filter-group">
+                <h4>Coleção</h4>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="collection" value="mar"> Mar</label>
+                    <label><input type="checkbox" name="collection" value="cyborg"> Cyborg</label>
+                    <label><input type="checkbox" name="collection" value="galaxia"> Galáxia</label>
+                    <label><input type="checkbox" name="collection" value="preta"> Preta</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h4>Preço</h4>
+                <label for="price-slider">Até R$ <span id="price-value">500</span></label>
+                <input type="range" id="price-slider" min="150" max="500" value="500" step="10">
+            </div>
+            <div class="filter-group">
+                <button id="clear-filters" class="btn">Limpar Filtros</button>
+            </div>
+        </aside>
+
+        <main class="product-grid-container">
+            <div class="product-grid">
+                <div class="product-card" data-name="Clean Galaxy" data-price="159.90" data-collection="galaxia">
+                    <img src="assets/img/garrafas/garrafa-clean-galaxy.png" alt="Garrafa Clean Galaxy">
+                    <div class="product-info">
+                        <h3>Clean Galaxy</h3>
+                        <p class="price">R$ 159,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Garrafa Mar" data-price="219.90" data-collection="mar">
+                    <img src="assets/img/garrafas/garrafa-mar.png" alt="Garrafa Mar">
+                    <div class="product-info">
+                        <h3>Garrafa Mar</h3>
+                        <p class="price">R$ 219,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Mar Ultra" data-price="239.90" data-collection="mar">
+                    <img src="assets/img/garrafas/garrafa-mar-ultra.png" alt="Garrafa Mar Ultra">
+                    <div class="product-info">
+                        <h3>Mar Ultra</h3>
+                        <p class="price">R$ 239,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Garrafa Cyborg" data-price="349.90" data-collection="cyborg">
+                    <img src="assets/img/garrafas/garrafa-cyborg.png" alt="Garrafa Cyborg">
+                    <div class="product-info">
+                        <h3>Garrafa Cyborg</h3>
+                        <p class="price">R$ 349,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Cyborg Green" data-price="369.90" data-collection="cyborg">
+                    <img src="assets/img/garrafas/garrafa-cyborg-green.png" alt="Garrafa Cyborg Green">
+                    <div class="product-info">
+                        <h3>Cyborg Green</h3>
+                        <p class="price">R$ 369,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Garrafa Hiper Galaxy" data-price="399.90" data-collection="galaxia">
+                    <img src="assets/img/garrafas/garrafa-hiper-galaxy.png" alt="Garrafa Hiper Galaxy">
+                    <div class="product-info">
+                        <h3>Garrafa Hiper Galaxy</h3>
+                        <p class="price">R$ 399,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Garrafa Preta" data-price="299.90" data-collection="preta">
+                    <img src="assets/img/garrafas/colecoes/colecoespreta.png" alt="Garrafa Preta">
+                    <div class="product-info">
+                        <h3>Garrafa Preta</h3>
+                        <p class="price">R$ 299,90</p>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Ultima Explorer" data-price="319.90" data-collection="preta">
+                    <img src="assets/img/garrafas/garrafa-preta-ultima-explorer.png" alt="Garrafa Ultima Explorer">
+                    <div class="product-info">
+                        <h3>Ultima Explorer</h3>
+                        <p class="price">R$ 319,90</p>
+                    </div>
+                </div>
+            </div>
+            <div id="no-results-message" style="display: none; text-align: center; padding: 4rem;">
+                <h3>Nenhum produto encontrado</h3>
+                <p>Tente ajustar seus filtros.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>AquaTech</h3>
+                    <p>Revolucionando sua hidratação com garrafas inteligentes.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Fale Conosco</h3>
+                    <a href="contato.html">Entre em contato</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2025 AquaTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchBar = document.getElementById('search-bar');
+            const collectionCheckboxes = document.querySelectorAll('input[name="collection"]');
+            const priceSlider = document.getElementById('price-slider');
+            const priceValue = document.getElementById('price-value');
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const productGrid = document.querySelector('.product-grid');
+            const productCards = Array.from(productGrid.children);
+            const noResultsMessage = document.getElementById('no-results-message');
+
+            const filterProducts = () => {
+                const searchTerm = searchBar.value.toLowerCase();
+                const maxPrice = parseFloat(priceSlider.value);
+                const selectedCollections = Array.from(collectionCheckboxes)
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.value);
+
+                let visibleProducts = 0;
+
+                productCards.forEach(card => {
+                    const name = card.dataset.name.toLowerCase();
+                    const price = parseFloat(card.dataset.price);
+                    const collection = card.dataset.collection;
+
+                    const nameMatch = name.includes(searchTerm);
+                    const priceMatch = price <= maxPrice;
+                    const collectionMatch = selectedCollections.length === 0 || selectedCollections.includes(collection);
+
+                    if (nameMatch && priceMatch && collectionMatch) {
+                        card.style.display = 'block';
+                        visibleProducts++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                noResultsMessage.style.display = visibleProducts === 0 ? 'block' : 'none';
+            };
+
+            const clearFilters = () => {
+                searchBar.value = ''
+                collectionCheckboxes.forEach(cb => cb.checked = false);
+                priceSlider.value = priceSlider.max;
+                priceValue.textContent = priceSlider.max;
+                filterProducts();
+            };
+
+            priceSlider.addEventListener('input', () => {
+                priceValue.textContent = priceSlider.value;
+                filterProducts();
+            });
+
+            searchBar.addEventListener('input', filterProducts);
+            collectionCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+            clearFiltersBtn.addEventListener('click', clearFilters);
+        });
+    </script>
+
+    <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

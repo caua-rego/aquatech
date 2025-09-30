@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleção Preta - AquaTech</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="assets/img/logo.png" alt="AquaTech Logo">
+                AquaTech &copy;
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video-background-wrapper">
+        <video autoplay muted loop class="hero-video-bg">
+            <source src="assets/img/colecao-black-background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+
+        <main>
+            <section class="collection-hero">
+                <div class="container">
+                    <div class="hero-text-container">
+                        <h2>Coleção Preta</h2>
+                        <p>A Coleção Preta é a personificação da elegância e do poder. Com um acabamento fosco sofisticado e um design atemporal, estas garrafas são para quem aprecia o minimalismo e a força do design clássico. É a escolha definitiva para qualquer ocasião.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="models-section fade-in">
+                <div class="container">
+                    <h2 class="section-title">Itens da Coleção</h2>
+                    <div class="models-container">
+                        <div class="model-card">
+                            <img src="assets/img/garrafas/colecoes/colecoespreta.png" alt="Coleção Preta">
+                            <div class="model-info">
+                                <h3>Garrafa Preta</h3>
+                                <p>A elegância do preto em suas mãos.</p>
+                                <p class="price">R$ 299,90</p>
+                            </div>
+                        </div>
+                        <div class="model-card">
+                            <img src="assets/img/garrafas/garrafa-preta-ultima-explorer.png" alt="Garrafa Ultima Explorer">
+                            <div class="model-info">
+                                <h3>Ultima Explorer</h3>
+                                <p>A escolha definitiva para o explorador urbano.</p>
+                                <p class="price">R$ 319,90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container text-center" style="margin-top: 2rem;">
+                <a href="modelos.html" class="btn btn-back">Voltar para Todos os Modelos</a>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <h3>AquaTech</h3>
+                        <p>Revolucionando sua hidratação com garrafas inteligentes.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Fale Conosco</h3>
+                        <a href="contato.html">Entre em contato</a>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Siga-nos</h3>
+                        <div class="social-links">
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-copy">&copy; 2025 AquaTech. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

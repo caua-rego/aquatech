@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Coleções - AquaTech</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="assets/img/logo.png" alt="AquaTech Logo">
+                AquaTech &copy;
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="colecoes.html" class="active">Coleções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="collections-page-section">
+            <h2 class="section-title">Todas as Coleções</h2>
+
+            <div class="mini-nav">
+                <a href="colecao-mar.html" class="mini-nav-item">Mar</a>
+                <a href="colecao-cyborg.html" class="mini-nav-item">Cyborg</a>
+                <a href="colecao-galaxia.html" class="mini-nav-item">Galáxia</a>
+                <a href="colecao-preta.html" class="mini-nav-item">Preta</a>
+            </div>
+
+            <div class="models-container">
+                <a href="colecao-mar.html" class="collection-link">
+                    <div class="model-card">
+                        <img src="assets/img/garrafas/colecoes/colecao mar.png" alt="Coleção Mar">
+                        <div class="model-info">
+                            <h3>Coleção Mar</h3>
+                            <p>Mergulhe em um oceano de estilo.</p>
+                            <p class="price">A partir de R$ 219,90</p>
+                            <span class="btn-collection">Ver Coleção</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="colecao-cyborg.html" class="collection-link">
+                    <div class="model-card">
+                        <img src="assets/img/garrafas/colecoes/colecao-cyborg.png" alt="Coleção Cyborg">
+                        <div class="model-info">
+                            <h3>Coleção Cyborg</h3>
+                            <p>Uma coleção para os amantes de tecnologia.</p>
+                            <p class="price">A partir de R$ 349,90</p>
+                            <span class="btn-collection">Ver Coleção</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="colecao-galaxia.html" class="collection-link">
+                    <div class="model-card">
+                        <img src="assets/img/garrafas/colecoes/colecao-galaxia-clean.png" alt="Coleção Galáxia Clean">
+                        <div class="model-info">
+                            <h3>Coleção Galáxia Clean</h3>
+                            <p>A beleza do universo em um design clean.</p>
+                            <p class="price">A partir de R$ 159,90</p>
+                            <span class="btn-collection">Ver Coleção</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="colecao-preta.html" class="collection-link">
+                    <div class="model-card">
+                        <img src="assets/img/garrafas/colecoes/colecoespreta.png" alt="Coleção Preta">
+                        <div class="model-info">
+                            <h3>Coleção Preta</h3>
+                            <p>A elegância do preto em suas mãos.</p>
+                            <p class="price">A partir de R$ 299,90</p>
+                            <span class="btn-collection">Ver Coleção</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>AquaTech</h3>
+                    <p>Revolucionando sua hidratação com garrafas inteligentes.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Fale Conosco</h3>
+                    <a href="contato.html">Entre em contato</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2025 AquaTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -18,75 +18,129 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Modelos</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
                     <li><a href="contato.html" class="active">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <div class="contact-container">
-            <div class="contact-form-section">
-                <section class="contact-section">
-                    <h2>Envie uma Mensagem</h2>
-                    <p>Preencha o formulário abaixo e entraremos em contato.</p>
-                    <form class="contact-form">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" required>
+    <div class="video-background-wrapper">
+        <video autoplay muted loop class="hero-video-bg">
+            <source src="assets/img/colecao-mar-background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
 
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
+        <main>
+            <section class="collection-hero">
+                <div class="container">
+                    <div class="hero-text-container">
+                        <h2>Fale Conosco</h2>
+                        <p>Tem alguma dúvida, sugestão ou apenas quer dizer um oi? Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+                    </div>
+                </div>
+            </section>
 
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+            <section class="contact-section fade-in">
+                <div class="container">
+                    <div class="contact-content-wrapper">
+                        <div class="contact-form-container">
+                            <h3>Envie sua Mensagem</h3>
+                            <form class="contact-form" action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" id="name" name="name" required placeholder="Seu nome aqui...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Sobre o que você quer falar?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Sua Mensagem</label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Deixe sua mensagem..."></textarea>
+                                </div>
+                                <button type="submit" class="btn">Enviar Mensagem</button>
+                            </form>
+                        </div>
 
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
-                </section>
+                        <div class="contact-info-map-container">
+                            <div class="contact-info-card">
+                                <h3>Nossas Informações</h3>
+                                <ul class="contact-details">
+                                    <li>
+                                        <p><strong>Endereço:</strong> Avenida da Inovação, 456, Distrito Industrial, Cidade Tech - TC</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>E-mail:</strong> contato@aquatech.com</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="map-card">
+                                <h3>Nossa Localização</h3>
+                                <div class="map-container">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086399940433!2d-122.4194154846813!3d37.77492957975899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1e8f23b7%3A0x4a501367f076adff!2sSan%20Francisco%20City%20Hall!5e0!3m2!1spt-BR!2sbr!4v1678886400000!5m2!1spt-BR!2sbr" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0; border-radius: 10px;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <h3>AquaTech</h3>
+                        <p>Revolucionando sua hidratação com garrafas inteligentes.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Fale Conosco</h3>
+                        <a href="contato.html">Entre em contato</a>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Siga-nos</h3>
+                        <div class="social-links">
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                            <a href="#">Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-copy">&copy; 2025 AquaTech. Todos os direitos reservados.</p>
             </div>
-            <div class="contact-details-section">
-                <section class="contact-section">
-                    <h2>Fale Conosco</h2>
-                    <p>Tem alguma dúvida sobre nossos produtos ou quer se tornar um revendedor? Entre em contato conosco.</p>
-                    
-                    <div class="contact-info">
-                        <h3>Nosso Endereço</h3>
-                        <p>Avenida da Inovação, 456</p>
-                        <p>Distrito Industrial, Cidade Tech - TC</p>
-                        <p>CEP: 98765-432</p>
-                    </div>
+        </footer>
+    </div>
 
-                    <div class="contact-info">
-                        <h3>Horário de Atendimento</h3>
-                        <p><strong>Segunda a Sexta:</strong> 9h às 18h</p>
-                        <p><strong>E-mail:</strong> contato@aquatech.com</p>
-                    </div>
-                </section>
-
-                <section class="map-section">
-                    <h2>Nosso Escritório Central</h2>
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086399940433!2d-122.4194154846813!3d37.77492957975899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1e8f23b7%3A0x4a501367f076adff!2sSan%20Francisco%20City%20Hall!5e0!3m2!1spt-BR!2sbr!4v1678886400000!5m2!1spt-BR!2sbr" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 AquaTech. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
