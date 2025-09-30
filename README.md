@@ -2,6 +2,29 @@
 
 Este é o site da AquaTech, uma marca de garrafas inteligentes que combinam design e tecnologia para revolucionar a sua hidratação.
 
+## 👨‍💻 Autores e Papéis
+
+O projeto foi desenvolvido por um trio de alunos, cada um com foco em áreas específicas:
+
+*  **Cauã Rêgo**: Cuidou da construção principal do site, elaborando o código HTML, CSS e definindo a identidade visual da marca.
+
+*  **Matheus Larré**: Responsável pelo código HTML, pela revisão do código CSS e pela elaboração do README.
+
+*  **Gabriel Brito**: Contribuiu com ideias de design, elaborou o vídeo de apresentação do projeto e realizou a revisão do código HTML.
+
+## 🎨 Paleta de Cores, Tipografia
+
+O design do AquaTech utiliza um tema escuro (Dark Mode) com destaques em cores vibrantes para simular o efeito "LED".
+
+Tipografia
+**Fonte Principal (Corpo de Texto)**: Roboto (Sans-serif)
+
+* Justificativa: A fonte Roboto foi escolhida por sua legibilidade impecável e seu design moderno. Ela alinha-se à estética tecnológica e limpa da marca AquaTech, garantindo uma leitura clara e contemporânea em todos os dispositivos.
+
+**Fonte Complementar** (Títulos e Destaques): Oxanium (Cursiva)
+
+* Justificativa: A fonte Oxanium foi utilizada em títulos e elementos de destaque para injetar um toque de futurismo e alta tecnologia no design. Seu estilo não convencional de cursiva fortalece a identidade visual inovadora da marca, contrastando com a sobriedade da Roboto.
+
 ## ✨ Features
 
 *   **Design Moderno e Atraente:** Uma interface elegante e moderna, com um tema escuro e efeitos de LED.
