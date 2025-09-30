@@ -86,67 +86,6 @@
             </div>
         </section>
 
-        <section class="models-section fade-in">
-            <div class="container">
-                <h2 class="section-title">Nossos Modelos em Destaque</h2>
-                <div class="css-carousel-container index-carousel">
-                    <input type="radio" id="index-slide-1" name="index-carousel-slides" checked>
-                    <input type="radio" id="index-slide-2" name="index-carousel-slides">
-                    <input type="radio" id="index-slide-3" name="index-carousel-slides">
-                    <input type="radio" id="index-slide-4" name="index-carousel-slides">
-
-                    <div class="carousel-track">
-                        <div class="model-card-slide">
-                            <div class="model-card">
-                                <img src="assets/img/garrafas/garrafa-hiper-galaxy.png" alt="Garrafa Hiper Galaxy">
-                                <div class="model-explanation">
-                                    <h3>Garrafa Hiper Galaxy</h3>
-                                    <p>A performance de outra galáxia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="model-card-slide">
-                            <div class="model-card">
-                                <img src="assets/img/garrafas/garrafa-cyborg-green.png" alt="Garrafa Cyborg Green">
-                                <div class="model-explanation">
-                                    <h3>Cyborg Green</h3>
-                                    <p>A evolução da hidratação em verde neon.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="model-card-slide">
-                            <div class="model-card">
-                                <img src="assets/img/garrafas/colecoes/colecao mar.png" alt="Coleção Mar">
-                                <div class="model-explanation">
-                                    <h3>Coleção Mar</h3>
-                                    <p>Mergulhe em um oceano de estilo.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="model-card-slide">
-                            <div class="model-card">
-                                <img src="assets/img/garrafas/colecoes/colecoespreta.png" alt="Coleção Preta">
-                                <div class="model-explanation">
-                                    <h3>Coleção Preta</h3>
-                                    <p>A elegância do preto em suas mãos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-nav">
-                        <label for="index-slide-1" class="nav-dot"></label>
-                        <label for="index-slide-2" class="nav-dot"></label>
-                        <label for="index-slide-3" class="nav-dot"></label>
-                        <label for="index-slide-4" class="nav-dot"></label>
-                    </div>
-                </div>
-                <div class="text-center" style="margin-top: 2rem;">
-                    <a href="modelos.html" class="btn">Ver Todos os Modelos</a>
-                </div>
-            </div>
-        </section>
-
         <section class="about-company-section fade-in">
             <div class="container">
                 <div class="about-company-content">
@@ -192,16 +131,18 @@
 
     <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
     <script>
-        const backToTopButton = document.getElementById('back-to-top');
-        if (backToTopButton) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTopButton.style.display = 'block';
-                } else {
-                    backToTopButton.style.display = 'none';
-                }
-            });
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopButton.style.display = 'block';
+                    } else {
+                        backToTopButton.style.display = 'none';
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
