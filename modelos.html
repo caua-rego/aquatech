@@ -54,11 +54,11 @@
 
         <main class="product-grid-container">
             <div class="product-grid">
-                <div class="product-card" data-name="Clean Galaxy" data-price="159.90" data-collection="galaxia">
+                <div class="product-card" data-name="Clean Galaxy" data-price="419.90" data-collection="galaxia">
                     <img src="assets/img/garrafas/garrafa-clean-galaxy.png" alt="Garrafa Clean Galaxy">
                     <div class="product-info">
                         <h3>Clean Galaxy</h3>
-                        <p class="price">R$ 159,90</p>
+                        <p class="price">R$ 419.90</p>
                     </div>
                 </div>
                 <div class="product-card" data-name="Garrafa Mar" data-price="219.90" data-collection="mar">
@@ -142,77 +142,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchBar = document.getElementById('search-bar');
-            const collectionCheckboxes = document.querySelectorAll('input[name="collection"]');
-            const priceSlider = document.getElementById('price-slider');
-            const priceValue = document.getElementById('price-value');
-            const clearFiltersBtn = document.getElementById('clear-filters');
-            const productGrid = document.querySelector('.product-grid');
-            const productCards = Array.from(productGrid.children);
-            const noResultsMessage = document.getElementById('no-results-message');
 
-            const filterProducts = () => {
-                const searchTerm = searchBar.value.toLowerCase();
-                const maxPrice = parseFloat(priceSlider.value);
-                const selectedCollections = Array.from(collectionCheckboxes)
-                    .filter(cb => cb.checked)
-                    .map(cb => cb.value);
-
-                let visibleProducts = 0;
-
-                productCards.forEach(card => {
-                    const name = card.dataset.name.toLowerCase();
-                    const price = parseFloat(card.dataset.price);
-                    const collection = card.dataset.collection;
-
-                    const nameMatch = name.includes(searchTerm);
-                    const priceMatch = price <= maxPrice;
-                    const collectionMatch = selectedCollections.length === 0 || selectedCollections.includes(collection);
-
-                    if (nameMatch && priceMatch && collectionMatch) {
-                        card.style.display = 'block';
-                        visibleProducts++;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-
-                noResultsMessage.style.display = visibleProducts === 0 ? 'block' : 'none';
-            };
-
-            const clearFilters = () => {
-                searchBar.value = ''
-                collectionCheckboxes.forEach(cb => cb.checked = false);
-                priceSlider.value = priceSlider.max;
-                priceValue.textContent = priceSlider.max;
-                filterProducts();
-            };
-
-            priceSlider.addEventListener('input', () => {
-                priceValue.textContent = priceSlider.value;
-                filterProducts();
-            });
-
-            searchBar.addEventListener('input', filterProducts);
-            collectionCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
-            clearFiltersBtn.addEventListener('click', clearFilters);
-        });
-    </script>
-
-    <a href="#" id="back-to-top" title="Voltar ao topo">&uarr;</a>
-    <script>
-        const backToTopButton = document.getElementById('back-to-top');
-        if (backToTopButton) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTopButton.style.display = 'block';
-                } else {
-                    backToTopButton.style.display = 'none';
-                }
-            });
-        }
     </script>
 </body>
 </html>
